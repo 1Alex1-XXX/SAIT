@@ -1,0 +1,473 @@
+body{
+    background-color: rgb(88, 88, 88);
+    margin: auto;
+    width: 98%;
+
+}
+
+
+.zag{
+    font-size: 7ch;
+    text-align: center;
+    padding-top: 3%;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+h2{
+    text-align: center;
+    padding-top: 3%;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ; 
+}
+/*Навигайция*/
+
+header{
+    background-repeat: no-repeat;
+}
+.header-nav{
+    background-color: #888;
+    background-repeat: no-repeat;
+    padding-right: 1%;
+    padding-left: 1%;
+    padding-top: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 7.5ch;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.logo-img{
+    width: 15%;
+    color: white;
+}
+.logo-text{
+
+    color: white;
+}
+.div-nav{
+    width:30%;
+}
+.navigation{
+    display: inherit;
+    width: 100%;
+    float: right ;
+}
+.navigation-text{
+    text-decoration: none;
+    font-size: large;
+    font-family:Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: white;
+    padding-left: 2%; 
+    padding-right: 2%; 
+    float: right;
+}
+.navigation-reg{
+    font-size: large;
+    font-family:Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color:orangered;
+    float: right;
+    padding: 2%;
+    
+}
+
+
+/*log in*/
+
+/* Full-width input fields */
+
+.inpit-log{
+    border-radius: 100px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+
+/* Set a style for all buttons */
+.logbtn {
+
+    float: right;
+    background-color: #a7a7a7;
+    color: white;
+    padding: 14px 20px;
+    margin: 10px 0px 10px 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.regbtn {
+    background-color: #a7a7a7;
+    color: white;
+    padding: 14px 10px;
+    margin: 10px 0px 10px 10px;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    border-radius: 20px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    border-radius: 20px;
+    padding: 10px 18px;
+    background-color: #888;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+    background-color:#ffffff;
+    border-radius: 0 0 10px 10px;
+    
+}
+
+.container1 {
+    padding: 16px;
+    background-color:#f1f1f1;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    border-radius: 10px;
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 35%; /* Could be more or less, depending on screen size */
+}
+
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(131, 131, 131);
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+
+
+
+
+
+
+/*main*/
+main{
+    width: 100%;
+    margin: auto;
+    background-color: #fff;
+    background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*Slider-swiper*/
+.swiper {
+    width: 150vh;
+    height: 70vh;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+/*Блок о фирме*/
+
+.about-company{
+    font-size: 1.3em;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+.div-img-company-1{
+    padding: 2%;
+    display: inline-flex;
+    width: 98%;
+}
+.div-img-company-2{
+    padding-right: 2%;
+    width: 98%;
+    float: left;
+
+}
+.img-company-1{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+.text-company-1{
+    width: 70%;
+    padding: 2%;
+    float: left;
+}
+.img-company-2{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    float: right;
+}
+
+.text-company-2{
+    padding: 2%;
+    float: right;
+    
+}
+
+/*Новости*/
+.news{
+    padding-top: 1.5%;
+    margin-left: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #a7a7a7;
+    width: 40%;
+}
+.news_2{
+    margin-left: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #a7a7a7   ;
+    width: 40%;
+    float: right;
+    margin-top: 5%;
+}
+.img-company-1-1{
+    width: 300px;
+    height: 300px;
+}
+.img-company-2-1{
+    width: 300px;
+    height: 300px;
+    float: right;
+}
+
+.div-img-company-1-1{
+    padding: 2%;
+    display: inline-flex;
+    width: 98%;
+}
+.div-img-company-2-1{
+    padding-right: 2%;
+    width: 98%;
+    float: left;
+
+}
+.div-img-company-1-2{
+ 
+    padding: 2%;
+    display: inline-flex;
+    width: 98%;
+}
+.div-img-company-2-2{
+
+    padding-right: 2%;
+    width: 98%;
+    float: left;
+    
+}
+.img-company-1-2{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
+.img-company-2-2{
+
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    float: right;
+}
+
+
+
+/*Контакты*/
+.naxod{
+    padding: 2%;
+    border-radius: 50px;
+    background-color: #797979;
+    width: 45%;
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.conbth{
+    text-decoration: none;
+    color: white;
+    cursor: pointer
+}
+.conbth:hover{
+    color: #888;
+}
+
+
+
+.con{
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+}
+.con-maps{
+    float: right;
+}
+
+.con-input{
+    width: 45%;
+}
+.con-input-text{
+    border-radius: 10px;
+    border: #888 solid 3px;
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+
+/*Подвал 'дует воздух' - УУУУУУУУууу*/
+.footer{
+    border-top: 1px solid rgb(255, 255, 255);
+    margin-top: auto;
+    color: white;
+    display: block;
+
+}
+.page{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.poka{
+    
+    height: 20vh;
+    background-color:rgb(56, 56, 56);
+   
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 3%;
+}
+.divf1{
+    color: white;
+    align-self: flex-end;
+    float: left;
+    margin-left: 8%;
+    margin-top: 1.5%;
+    width: 100%;
+}
+.divf2{
+    width: 80%;
+    padding-top: 1.5%;
+}
+.divf3{
+    float: right;
+    margin-top: 0;
+    width: 40%;
+    margin-right: 8%;
+}
+.divf1-log{
+    border-radius: 50%;
+    width: 10%;
+    padding-right: 1%;
+}
+.divf2-log{
+    width: 10%;
+    padding-right: 1%;
+}

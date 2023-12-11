@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="16x16" href="img/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Контакты</title>
+</head>
+<body>
+
+    <div class="page">
+
+        <header>
+            <div class="header-nav">
+                <div class="logo">
+                    <img src="img/home.png" class="logo-img" alt="домик">
+                    <span class="logo-text">ＺｈａｌｙｕｚЕ</span>
+                </div>
+
+                <div class="div-nav">
+                <nav class="navigation">
+                    <a href="index.html" class="navigation-text">О компании</a>
+                    <a href="#reviews" class="navigation-text">Отзывы</a>
+                    <a href="Contacts.html" class="navigation-text">Контакты</a>
+                    <a href="dostavka.html" class="navigation-text">Доставка</a>
+                    <a href="#news" class="navigation-text">Новости</a>
+
+                    <!--авторизоваться-->
+
+                    <button class="logbtn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Войти</button>
+
+                    <div id="id01" class="modal">
+                    
+                        <form class="modal-content animate" action="">
+                            <div class="imgcontainer">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+                            <img src="img/sss.webp" alt="Avatar" class="avatar">
+                            </div>
+
+                            <div class="container">
+                            <label for="uname"><b>Логин</b></label>
+                            <input type="text" placeholder="Введите логин" name="uname"  required class="inpit-log">
+
+                            <label for="psw"><b>Пароль</b></label>
+                            <input type="password" placeholder="Введите пароль" name="psw"  required class="inpit-log">
+                                
+                            <button type="submit" class="logbtn">Войти</button>
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember"> Запомнить меня
+                            </label>
+                            </div>
+
+                            <div class="container1">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Отмена</button>
+                            <span class="psw">Забыли <a href="#">пароль?</a></span>
+                            </div>
+                        </form>
+                    </div>
+
+
+
+                    <button class="logbtn" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Регистрация</button>
+
+                    <div id="id02" class="modal">
+                    
+                    <form class="modal-content animate" action="">
+                        <div class="imgcontainer">
+                        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span>
+                        <img src="img/sss.webp" alt="Avatar" class="avatar">
+                        </div>
+
+                        <div class="container">
+                        <label for="uname1"><b>Логин</b></label>
+                        <input type="text" placeholder="Придумайте логин" name="uname1" required class="inpit-log">
+
+                        <label for="psw1"><b>Пароль</b></label>
+                        <input type="password" placeholder="Придумайте пароль" name="psw1" required class="inpit-log">
+
+                        <label for="Email"><b>Email</b></label>
+                        <input type="text" placeholder="Введите почту" name="Email" required class="inpit-log">
+                            
+                        
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember1"> Запомнить меня
+                        </label>
+                        </div>
+
+                        <div class="container1">
+                            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Отмена</button>
+                            <button type="submit" class="regbtn">Регистрация</button>
+                        </div>
+                    </form>
+                    </div>
+                    
+                    <script src="js-login.js"></script>
+                </nav>
+            </div>
+
+            </div>
+
+        </header>
+
+        <main>
+
+            <section>
+                <H1 class="zag">Контакты</H1>
+
+                <div style="display: flex; justify-content: space-around;">
+                    <div class="naxod">
+                        <p>Мы находимся по адресу мне лень искать. Оставить заявку на заказ шторы, жалюзи и карнизы
+                            с помомощью вкладки доставки или звоните по номер: +7(999)-999-99-99
+                        </p>
+                        <br>
+                        <p>Перейти в <a href="dostavka.html" class="conbth">Доставку</a></p>
+                    </div>
+
+                    <div>
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2b8f155f8e0b55fc4f961bc355b10744c50e31573659a67cef8e89c0425631b9&amp;width=571&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+                </div>
+
+                
+            </section>
+
+            <section>
+                <H1 class="zag">Устройство на работу</H1>   
+
+                <h2 style="text-align: center;">Заполните форму</h2>
+                <div style="display: flex; justify-content: flex-end;">
+                        
+                        <div class="con-input">
+                            
+                            <label for="">Имя</label>
+                            <br>
+                            <input type="text" class="con-input-text" placeholder="Введите имя">
+                            <br>
+                            <label for="">Фамилия</label>
+                            <br>
+                            <input type="text" class="con-input-text" placeholder="Введите фамилию">
+                            <br>
+                            <label for="">Почта</label>
+                            <br>
+                            <input type="text" class="con-input-text" placeholder="Введите почту">
+                            <br>
+                            <label for="">Город</label>
+                            <br>
+                            <input type="text" class="con-input-text" placeholder="Введите ваш город">
+                            <br>
+                            <label for="">Введите </label>
+                            <br>
+                            <input type="text" class="con-input-text" placeholder="Введите логин"> 
+                            <br>
+
+                        </div>
+                        <div style="float: right; width: 45%;" >
+                            <label for="">Введите место работы</label>
+                            <br>
+                            <input type="text" class="con-input-text" placeholder="Ваше предыдущее место работы"> 
+                            <br>
+                            <label for="">Введите должность</label>
+                            <br>
+                            <input type="text" class="con-input-text" placeholder="Ваша предыдущая должность"> 
+                            <br>
+                            <label for="">Дополнительный комментарий</label>
+                            <br>
+                            <input type="text" class="con-input-text" placeholder="Комментарий" style="height: 50%;"> 
+                            
+                        </div>
+                </div>
+               <button class="logbtn" onclick="document.getElementById('').style.display='block'" style="width:auto; margin-right: 9%;">Отправить</button>
+            </section>
+        
+
+        </main>
+
+        <footer>
+            <div class="poka">
+
+                <div></div>
+
+                <div class="divf1">
+                    <p>Шторы и жалюзи © 2022-2023 Все права защищены</p>
+                    </div>
+                    
+                    <div class="divf2">
+                        <a href="#"><img src="img/ok.png" class="divf1-log"></a>
+                        <a href="#"><img src="img/vk.svg " class="divf2-log"></a>
+                    </div>
+                    
+                    <div class="divf3">
+                    <a href="#"><p style="color: white;">sdjfjgsdbgjsdfghb@mail.ru</p></a>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+    </div>
+    
+</body>
+</html>

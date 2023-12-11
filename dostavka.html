@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" sizes="16x16" href="img/icon.png">
+    <title>Доставка</title>
+</head>
+<body>
+
+    <div class="page">
+
+        <header>
+            <div class="header-nav">
+                <div class="logo">
+                    <img src="img/home.png" class="logo-img" alt="домик">
+                    <span class="logo-text">ＺｈａｌｙｕｚЕ</span>
+                </div>
+
+                <div class="div-nav">
+                <nav class="navigation">
+                    <a href="index.html" class="navigation-text">О компании</a>
+                    <a href="#reviews" class="navigation-text">Отзывы</a>
+                    <a href="Contacts.html" class="navigation-text">Контакты</a>
+                    <a href="dostavka.html" class="navigation-text">Доставка</a>
+                    <a href="#news" class="navigation-text">Новости</a>
+
+                    <!--авторизоваться-->
+
+                <button class="logbtn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Войти</button>
+
+                <div id="id01" class="modal">
+                    
+                    <form class="modal-content animate" action="">
+                        <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+                        <img src="img/sss.webp" alt="Avatar" class="avatar">
+                        </div>
+
+                        <div class="container">
+                        <label for="uname"><b>Логин</b></label>
+                        <input type="text" placeholder="Введите логин" name="uname" required class="inpit-log">
+
+                        <label for="psw"><b>Пароль</b></label>
+                        <input type="password" placeholder="Введите пароль" name="psw" required class="inpit-log">
+                            
+                        <button type="submit" class="logbtn">Войти</button>
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> Запомнить меня
+                        </label>
+                        </div>
+
+                        <div class="container1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Отмена</button>
+                        <span class="psw">Забыли <a href="#">пароль?</a></span>
+                        </div>
+                    </form>
+                </div>
+
+
+
+                <button class="logbtn" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Регистрация</button>
+
+                <div id="id02" class="modal">
+                    
+                    <form class="modal-content animate" action="">
+                        <div class="imgcontainer">
+                        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span>
+                        <img src="img/sss.webp" alt="Avatar" class="avatar">
+                        </div>
+
+                        <div class="container">
+                        <label for="uname1"><b>Логин</b></label>
+                        <input type="text" placeholder="Придумайте логин" name="uname1" required class="inpit-log">
+
+                        <label for="psw1"><b>Пароль</b></label>
+                        <input type="password" placeholder="Придумайте пароль" name="psw1" required required class="inpit-log">
+
+                        <label for="Email"><b>Email</b></label>
+                        <input type="text" placeholder="Введите почту" name="Email" required required class="inpit-log">
+                            
+                        
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember1"> Запомнить меня
+                        </label>
+                        </div>
+
+                        <div class="container1">
+                            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Отмена</button>
+                            <button type="submit" class="regbtn">Регистрация</button>
+                        </div>
+                    </form>
+                </div>
+                    
+                <script src="js-login.js"></script>
+                </nav>
+            </div>
+
+            </div>
+
+        </header>
+
+        <main>
+            <section>
+                <H1 class="zag">Доставка</H1>   
+
+                <h2 style="text-align: center;">Оформление заказа</h2>
+                <div style="display: flex; margin-left: 8%;">
+                        
+                        <div class="con-input">
+                            
+                            <label for="">Имя</label>
+                            <br>
+                            <input type="text" class="con-input-text" placeholder="Введите имя">
+                            <br>
+                            <label for="">Почта</label>
+                            <br>
+                            <input type="text" class="con-input-text" placeholder="Введите почта">
+                            <br>
+                            <label for="">Адрес</label>
+                            <br>
+                            <input type="text" class="con-input-text" placeholder="Введите адрес">
+                            <br>
+                            <label for="">Контактный номер</label>
+                            <br>
+                            <input type="text" class="con-input-text" placeholder="Введите номер">
+                            <br>
+                            <button class="logbtn" onclick="document.getElementById('').style.display='block'" style="width:auto; margin-right: 20%;">Оформить доставку</button>
+                        </div>
+
+                        <div>
+                            <h3 style="text-align: center; font-family: 'Courier New', Courier, monospace;">КАТОЛОГ</h3>
+                            <img src="img/каталог.png" alt="" style="border-radius: 20px;">
+                        </div>
+                            
+            </section>
+
+            <section class="about-company" id="reviews">
+                <H1 class="zag">Отзывы</H1>
+
+                <div class="div-img-company-1-2">
+                    <img src="img/akali.jpg" alt="" class="img-company-1-2">
+                        <div class="news">
+                            <p class="text-company-1-1"><b>"</b>Большой выбор, на любой вкус и кошелёк, качественный пошив, внимание к каждым деталям,
+                                исполнение работ в срок! Для меня большой плюс, что работают с понедельника по воскресенье, так как столкнулась с тем,
+                                что некоторые не работают в выходные дни! <b>"</b></p>
+                        </div>
+                </div>
+
+                <div class="div-img-company-2-2">
+                    <img src="img/shen.jpg" alt="" class="img-company-2-2">
+                    <div class="news_2">
+                        <p class="text-company-2-1">Большой выбор, на любой вкус и кошелёк, качественный пошив, внимание к каждым деталям,
+                            исполнение работ в срок! Для меня большой плюс, что работают с понедельника по воскресенье, так как столкнулась
+                            с тем, что некоторые не работают в выходные дни!</p>
+                    </div>
+                </div>
+
+                <div class="div-img-company-1-2">
+                    <img src="img/к'санте.jpg" alt="" class="img-company-1-2">
+                    <div class="news">
+                        <p class="text-company-1">Заказала выезд дизайнера, хотела установить рулонные шторы и как же я рада, что Лариса мне предложила
+                            японские шторы!! Получилось очень стильно для моего дома. Дизайнер подошла ответственно к своей работе и если появлялись 
+                            нюансы, всё решалось. Благодарю</p>
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="poka">
+
+                <div></div>
+
+                <div class="divf1">
+                    <p>Шторы и жалюзи © 2022-2023 Все права защищены</p>
+                    </div>
+                    
+                    <div class="divf2">
+                        <a href="#"><img src="img/ok.png" class="divf1-log"></a>
+                        <a href="#"><img src="img/vk.svg " class="divf2-log"></a>
+                    </div>
+                    
+                    <div class="divf3">
+                    <a href="#"><p style="color: white;">sdjfjgsdbgjsdfghb@mail.ru</p></a>
+                    </div>
+                </div>
+
+        </footer>
+
+    </div>
+
+</body>
+</html>
